@@ -137,7 +137,7 @@ The app loads artifacts from `artifacts/` and team-week aggregates from `data/de
 
 ---
 
-## Rationale (Quick)
+## Punt Rationale
 
 - **Punt net (4w)** uses final field position instead of raw kick/return fields, so returns, touchbacks, OB, and most penalties are naturally included:  
   ```
