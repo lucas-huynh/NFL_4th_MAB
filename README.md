@@ -28,6 +28,7 @@ It builds recent team features from play-by-play, trains a **behavior policy** (
 ├── data_clean_2016_2024.ipynb     # pulls PBP via nfl_data_py (nflverse) + feature build
 ├── behavior_2016_2024_epa.ipynb   # behavior policy + Greedy/LinUCB + EPA arm models
 ├── behavior_2016_2024_wpa.ipynb   # behavior policy + Greedy/LinUCB + WPA arm models
+|--> demo_det_gb.mov # demo video of app
 └── README.md
 ```
 
@@ -123,6 +124,8 @@ streamlit run app.py
 ```
 
 The app loads artifacts from `artifacts/` and team-week aggregates from `data/decisions_2016_2024.csv`.
+
+A quick demo has been provided under demo_det_gb.mov
 
 ---
 
