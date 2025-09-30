@@ -22,13 +22,14 @@ It builds recent team features from play-by-play, trains a **behavior policy** (
 │   ├── pbp_clean_2016_2024.csv
 │   ├── decisions_2016_2024.csv
 │   └── (other 4th-down/metrics/situational CSVs)
-├── team_logos/                    # PNG logos for the app (e.g., KC.png)
+├── team_logos/                    # Team logos for the app (e.g., KC.png)
+├── team_stadiums/                 # Stadium photos (e.g., KC_HOME.png)
+├── demo_det_gb.mov                # Short screen recording demo (DET @ GB)
 ├── NFL.png                        # header logo for UI
 ├── field_diagram.png              # yardline helper image
 ├── data_clean_2016_2024.ipynb     # pulls PBP via nfl_data_py (nflverse) + feature build
 ├── behavior_2016_2024_epa.ipynb   # behavior policy + Greedy/LinUCB + EPA arm models
 ├── behavior_2016_2024_wpa.ipynb   # behavior policy + Greedy/LinUCB + WPA arm models
-|--> demo_det_gb.mov # demo video of app
 └── README.md
 ```
 
