@@ -84,6 +84,32 @@ These will:
   - `arm_models_epa.joblib`, `arm_models_wpa.joblib`
   - Preprocessor + META **JSONs/joblibs**
 
+## Bandit Formulas
+
+- **Greedy Policy**  
+  \[
+  a_t = \arg\max_a \hat{\mu}(x_t, a)
+  \]
+
+- **ε-Greedy Policy**  
+  \[
+  a_t =
+  \begin{cases}
+  \arg\max_a \hat{\mu}(x_t, a) & \text{with probability } 1-\epsilon \\
+  \text{random action} & \text{with probability } \epsilon
+  \end{cases}
+  \]
+
+- **LinUCB (per-action confidence bound)**  
+  \[
+  a_t = \arg\max_a \Big( \hat{\mu}(x_t, a) +
+  \alpha \sqrt{x_t^\top A_a^{-1} x_t} \Big)
+  \]
+  where:
+  - \( A_a \) is the regularized design matrix for arm \( a \)  
+  - \( \hat{\mu}(x_t, a) \) is the predicted reward  
+  - \( \alpha \) tunes exploration
+
 ---
 
 ### 3) Sanity-check inference (optional)
