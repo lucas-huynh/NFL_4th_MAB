@@ -14,6 +14,7 @@ It builds recent team features from play-by-play, trains a **behavior policy** (
 ├── app.py                         # Streamlit UI
 ├── artifacts/                     # Trained models + inference code
 │   ├── inference.py               # score_context(), ACTIONS, preprocessor, etc.
+├── behavior_policy.joblib     #Trained Logistic Regression Model
 │   ├── test_infer.py              # quick tests for inference flow
 │   ├── arm_models_epa.joblib      # per-action regressors (EPA)
 │   ├── arm_models_wpa.joblib      # per-action regressors (WPA)
